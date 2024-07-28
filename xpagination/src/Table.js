@@ -85,7 +85,7 @@ function Table() {
           })}
         </tbody>
       </table>
-      <div>
+      <div className="btn-box">
         <button disabled={!prev} onClick={handlePrev}>Previous</button>
         <button>{pageIndex}</button>
         <button disabled={!next} onClick={handleNext}>Next</button>

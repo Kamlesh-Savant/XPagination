@@ -9,6 +9,12 @@
 table{
     width: 90%;
     text-align: left;
+    border-collapse:collapse;
+    box-shadow: 12px 0 15px -4px rgba(205, 206, 207, 0.8), -12px 0 8px -4px rgba(220, 223, 226, 0.8);
+    margin-bottom: 50px;
+}
+tbody{
+    border-bottom: 2px solid #26a37f;
 }
 thead th{
     background-color: #26a37f;
@@ -18,7 +24,24 @@ thead th{
 td{
     padding: 10px;
     border-bottom: 1px solid rgb(233, 223, 223);
+    /* border-bottom: 1pt solid red; */
+    border-bottom-style: dotted;
 }
-tr:last-child{
-    border-bottom: 1px solid #26a37f;
+
+.btn-box{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-box button{
+    background-color: #26a37f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-box button:disabled{
+    background-color: #0c3529;
+    cursor: not-allowed
 }
