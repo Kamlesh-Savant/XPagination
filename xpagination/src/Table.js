@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import './Table.css';
+
 
 function Table() {
     const [data, setData] = useState([]);
@@ -59,7 +61,7 @@ function Table() {
   }
 
   return (
-    <>
+    <div className="container">
       <h1>Employee Data Table</h1>
       <table>
         <thead>
@@ -88,7 +90,7 @@ function Table() {
         <button>{pageIndex}</button>
         <button disabled={!next} onClick={handleNext}>Next</button>
       </div>
-    </>
+    </div>
   );
 }
 
